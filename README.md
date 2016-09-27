@@ -4,12 +4,13 @@
 
 Boost AEM components development
 
-![Code Templates](https://github.com/Cognifide/AEM-Code-Templates/blob/master/img.png)
+![Code Templates](https://github.com/Cognifide/AEM-Code-Templates/blob/master/demo.gif)
 
 
 ### What is it and how to use it
 
 *Code templates* are list of reusable and parameterized code snippets. The feature is well-known for all developers. You use it every time when you create *loops*/*conditions* in Java classes.
+
 The custom **code templates** are available in *xml* files only. Just type **aem** in a *xml* file and select the template which you want.
 
 
