@@ -1,0 +1,191 @@
+<templateSet group="widgets">
+  <template name="aem_textfield" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/textfield&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    name=&quot;./$NODE_NAME$&quot; /&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;nodeName&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;fieldDescription&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_cq_dialog_with_tab" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;jcr:root xmlns:sling=&quot;http://sling.apache.org/jcr/sling/1.0&quot; xmlns:cq=&quot;http://www.day.com/jcr/cq/1.0&quot; xmlns:jcr=&quot;http://www.jcp.org/jcr/1.0&quot; xmlns:nt=&quot;http://www.jcp.org/jcr/nt/1.0&quot;&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    jcr:title=&quot;$COMPONENT_NAME$&quot;&#10;    sling:resourceType=&quot;cq/gui/components/authoring/dialog&quot;&gt;&#10;    &lt;content&#10;        jcr:primaryType=&quot;nt:unstructured&quot;&#10;        sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;        &lt;layout&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            sling:resourceType=&quot;granite/ui/components/foundation/layouts/tabs&quot;&#10;            type=&quot;nav&quot; /&gt;&#10;        &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;            &lt;$TAB_NODE$&#10;                jcr:primaryType=&quot;nt:unstructured&quot;&#10;                jcr:title=&quot;$TAB_NAME$&quot;&#10;                sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;                &lt;layout&#10;                    jcr:primaryType=&quot;nt:unstructured&quot;&#10;                    sling:resourceType=&quot;granite/ui/components/foundation/layouts/fixedcolumns&quot; /&gt;&#10;                &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;                    &lt;column&#10;                        jcr:primaryType=&quot;nt:unstructured&quot;&#10;                        sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;                        &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;                            $END$&#10;                        &lt;/items&gt;&#10;                    &lt;/column&gt;&#10;                &lt;/items&gt;&#10;            &lt;/$TAB_NODE$&gt;&#10;        &lt;/items&gt;&#10;    &lt;/content&gt;&#10;&lt;/jcr:root&gt;" description="Touch UI dialog skeleton with tab" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="" defaultValue="&quot;COMPONENT NAME&quot;" alwaysStopAt="true" />
+    <variable name="TAB_NODE" expression="" defaultValue="&quot;TAB_NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="TAB_NAME" expression="capitalize(TAB_NODE)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_image" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/fileupload&quot;&#10;    autoStart=&quot;{Boolean}false&quot;&#10;    class=&quot;cq-droptarget&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    fileNameParameter=&quot;./$NODE_NAME$/fileName&quot;&#10;    mimeTypes=&quot;[image]&quot;&#10;    multiple=&quot;{Boolean}$FIELD_MULTIPLE$&quot;&#10;    name=&quot;./$NODE_NAME$/file&quot;&#10;    title=&quot;$FIELD_LABEL$&quot;&#10;    useHTML5=&quot;{Boolean}$USE_HTML5$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_MULTIPLE" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
+    <variable name="USE_HTML5" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_cq_dialog_tab" value="&lt;$TAB_NODE$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    jcr:title=&quot;$TAB_NAME$&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;    &lt;layout&#10;        jcr:primaryType=&quot;nt:unstructured&quot;&#10;        sling:resourceType=&quot;granite/ui/components/foundation/layouts/fixedcolumns&quot; /&gt;&#10;    &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;        &lt;column&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;            &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;                $END$&#10;            &lt;/items&gt;&#10;        &lt;/column&gt;&#10;    &lt;/items&gt;&#10;&lt;/$TAB_NODE$&gt;" description="Touch UI dialog tab  (usefull when you have dialog with tabs)" toReformat="false" toShortenFQNames="true">
+    <variable name="TAB_NODE" expression="" defaultValue="&quot;TAB_NODE&quot;" alwaysStopAt="true" />
+    <variable name="TAB_NAME" expression="capitalize(TAB_NODE)" defaultValue="&quot;TAB_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_select" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/select&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    name=&quot;./$NODE_NAME$&quot;&gt;&#10;    &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;        &lt;$FIRST_OPTION_NODE_NAME$&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            selected=&quot;{Boolean}true&quot;&#10;            text=&quot;$FIRST_OPTION_TEXT$&quot;&#10;            value=&quot;$FIRST_OPTION_NODE_NAME$&quot; /&gt;&#10;        &lt;$SECOND_OPTION_NODE_NAME$&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            text=&quot;$SECOND_OPTION_TEXT$&quot;&#10;            value=&quot;$SECOND_OPTION_NODE_NAME$&quot; /&gt;&#10;    &lt;/items&gt;&#10;&lt;/$NODE_NAME$&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;FIELD_DESCRIPTION&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="&quot;FIELD_LABEL&quot;" alwaysStopAt="true" />
+    <variable name="FIRST_OPTION_NODE_NAME" expression="" defaultValue="&quot;FIRST_NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIRST_OPTION_TEXT" expression="capitalize(FIRST_OPTION_NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SECOND_OPTION_NODE_NAME" expression="" defaultValue="&quot;SECOND_NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="SECOND_OPTION_TEXT" expression="capitalize(SECOND_OPTION_NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_select_option" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    text=&quot;$OPTION_TEXT$&quot;&#10;    value=&quot;$NODE_NAME$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="OPTION_TEXT" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_pathbrowser" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/pathbrowser&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    name=&quot;./$NODE_NAME$&quot;&#10;    rootPath=&quot;/content$ROOT_PATH$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;FIELD_DESCRIPTION&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROOT_PATH" expression="" defaultValue="&quot;/ROOT_PATH&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_cq_dialog_without_tab" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;jcr:root xmlns:sling=&quot;http://sling.apache.org/jcr/sling/1.0&quot; xmlns:cq=&quot;http://www.day.com/jcr/cq/1.0&quot; xmlns:jcr=&quot;http://www.jcp.org/jcr/1.0&quot; xmlns:nt=&quot;http://www.jcp.org/jcr/nt/1.0&quot;&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    jcr:title=&quot;$COMPONENT_NAME$&quot;&#10;    sling:resourceType=&quot;cq/gui/components/authoring/dialog&quot;&gt;&#10;    &lt;content&#10;        jcr:primaryType=&quot;nt:unstructured&quot;&#10;        sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;        &lt;layout&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            sling:resourceType=&quot;granite/ui/components/foundation/layouts/fixedcolumns&quot; /&gt;&#10;        &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;            &lt;column&#10;                jcr:primaryType=&quot;nt:unstructured&quot;&#10;                sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;                &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;                    $END$&#10;                &lt;/items&gt;&#10;            &lt;/column&gt;&#10;        &lt;/items&gt;&#10;    &lt;/content&gt;&#10;&lt;/jcr:root&gt;" description="Touch UI dialog skeleton without tab" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="" defaultValue="&quot;COMPONENT NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_fieldset" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    jcr:title=&quot;$FIELD_LABEL$&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/fieldset&quot;&gt;&#10;    &lt;layout&#10;        jcr:primaryType=&quot;nt:unstructured&quot;&#10;        sling:resourceType=&quot;granite/ui/components/foundation/layouts/fixedcolumns&quot;/&gt;&#10;    &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;        $END$&#10;    &lt;/items&gt;&#10;&lt;/$NODE_NAME$&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_multifield" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/multifield&quot;&#10;    class=&quot;multifield-full-width&quot;&gt;&#10;    $END$&#10;&lt;/$NODE_NAME$&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_textarea" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/textarea&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    name=&quot;./$NODE_NAME$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;FIELD_DESCRIPTION&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_numberfield" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/numberfield&quot;&#10;    defaultValue=&quot;$DEFAULT$&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    max=&quot;$MAX$&quot;&#10;    min=&quot;$MIN$&quot;&#10;    name=&quot;./$NODE_NAME$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;DEFAULT&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;FIELD_DESCRIPTION&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="MAX" expression="" defaultValue="&quot;MAX&quot;" alwaysStopAt="true" />
+    <variable name="MIN" expression="" defaultValue="&quot;MIN&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_numberfield_decimal" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/numberfield&quot;&#10;    defaultValue=&quot;$DEFAULT$&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    max=&quot;$MAX$&quot;&#10;    min=&quot;$MIN$&quot;&#10;    name=&quot;./$NODE_NAME$&quot;&#10;    step=&quot;$STEP$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="&quot;DEFAULT&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;FIELD_DESCRIPTION&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="MAX" expression="" defaultValue="&quot;MAX&quot;" alwaysStopAt="true" />
+    <variable name="MIN" expression="" defaultValue="&quot;MIN&quot;" alwaysStopAt="true" />
+    <variable name="STEP" expression="" defaultValue="&quot;0.0001&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_checkbox" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/checkbox&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    name=&quot;./$NODE_NAME$&quot;&#10;    text=&quot;$FIELD_TEXT$&quot;&#10;    value=&quot;true&quot; /&gt;&#10;&lt;$NODE_NAME$-value-when-missing&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/hidden&quot;&#10;    name=&quot;./$NODE_NAME$@UseDefaultWhenMissing&quot;&#10;    value=&quot;{Boolean}true&quot; /&gt;&#10;&lt;$NODE_NAME$-value-default&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/hidden&quot;&#10;    name=&quot;./$NODE_NAME$@DefaultValue&quot;&#10;    value=&quot;{Boolean}false&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;FIELD_DESCRIPTION&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_TEXT" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_include" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/include&quot;&#10;    path=&quot;$PATH_TO_INCLUDE$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="PATH_TO_INCLUDE" expression="" defaultValue="&quot;PATH_TO_INCLUDE&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_richtext" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;cq/gui/components/authoring/dialog/richtext&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    name=&quot;./$NODE_NAME$&quot;&#10;    useFixedInlineToolbar=&quot;{Boolean}true&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;FIELD_DESCRIPTION&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_text" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/text&quot;&#10;    text=&quot;$FIELD_TEXT$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_TEXT" expression="" defaultValue="&quot;FIELD_TEXT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_radiogroup" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/radiogroup&quot;&#10;    defaultValue=&quot;$DEFAULT_VALUE$&quot;&#10;    name=&quot;./$NODE_NAME$&quot;&#10;    text=&quot;$FIELD_TEXT$&quot; &gt;&#10;    &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;        &lt;$FIRST_OPTION$&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            sling:resourceType=&quot;granite/ui/components/foundation/form/radio&quot;&#10;            text=&quot;$FIRST_OPTION_TEXT$&quot;&#10;            value=&quot;$FIRST_OPTION$&quot; /&gt;&#10;        &lt;$SECOND_OPTION$&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            sling:resourceType=&quot;granite/ui/components/foundation/form/radio&quot;&#10;            text=&quot;$SECOND_OPTION_TEXT$&quot;&#10;            value=&quot;$SECOND_OPTION$&quot; /&gt;&#10;    &lt;/items&gt;&#10;&lt;/$NODE_NAME$&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="DEFAULT_VALUE" expression="" defaultValue="&quot;DEFAULT_VALUE&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_TEXT" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIRST_OPTION" expression="DEFAULT_VALUE" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIRST_OPTION_TEXT" expression="capitalize(DEFAULT_VALUE)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SECOND_OPTION" expression="" defaultValue="&quot;SECOND_OPTION&quot;" alwaysStopAt="true" />
+    <variable name="SECOND_OPTION_TEXT" expression="capitalize(SECOND_OPTION)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_radiogroup_option" value="&lt;$OPTION$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/radio&quot;&#10;    text=&quot;$OPTION_TEXT$&quot;&#10;    value=&quot;$OPTION$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="OPTION" expression="" defaultValue="&quot;OPTION&quot;" alwaysStopAt="true" />
+    <variable name="OPTION_TEXT" expression="capitalize(OPTION)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_fieldset_with_background" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    jcr:title=&quot;$FIELD_LABEL$&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/fieldset&quot;&gt;&#10;    &lt;layout&#10;        jcr:primaryType=&quot;nt:unstructured&quot;&#10;        sling:resourceType=&quot;granite/ui/components/foundation/layouts/fixedcolumns&quot;/&gt;&#10;    &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;        &lt;column&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;            &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;                &lt;well&#10;                    jcr:primaryType=&quot;nt:unstructured&quot;&#10;                    sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;                &lt;layout&#10;                    jcr:primaryType=&quot;nt:unstructured&quot;&#10;                    sling:resourceType=&quot;granite/ui/components/foundation/layouts/well&quot;/&gt;&#10;                    &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;                        $END$&#10;                    &lt;/items&gt;&#10;                &lt;/well&gt;&#10;            &lt;/items&gt;&#10;        &lt;/column&gt;&#10;    &lt;/items&gt;&#10;&lt;/$NODE_NAME$&gt;&#10;" toReformat="false" toShortenFQNames="true">
+    <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_component_definition" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;jcr:root xmlns:cq=&quot;http://www.day.com/jcr/cq/1.0&quot; xmlns:jcr=&quot;http://www.jcp.org/jcr/1.0&quot;&#10;    cq:isContainer=&quot;{Boolean}$IS_CONTAINER$&quot;&#10;    jcr:primaryType=&quot;cq:Component&quot;&#10;    jcr:title=&quot;$COMPONENT_TITLE$&quot;&#10;    componentGroup=&quot;$COMPONENT_GROUP$&quot; /&gt;" description=".content.xml node" toReformat="false" toShortenFQNames="true">
+    <variable name="IS_CONTAINER" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
+    <variable name="COMPONENT_TITLE" expression="" defaultValue="&quot;COMPONENT_TITLE&quot;" alwaysStopAt="true" />
+    <variable name="COMPONENT_GROUP" expression="" defaultValue="&quot;COMPONENT_GROUP&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_editconfig" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;jcr:root xmlns:cq=&quot;http://www.day.com/jcr/cq/1.0&quot; xmlns:jcr=&quot;http://www.jcp.org/jcr/1.0&quot;&#10;    cq:dialogMode=&quot;floating&quot;&#10;    jcr:primaryType=&quot;cq:EditConfig&quot;&gt;&#10;    &lt;cq:listeners&#10;        jcr:primaryType=&quot;cq:EditListenersConfig&quot;&#10;        afterdelete=&quot;$AFTER_DELETE$&quot;&#10;        aftermove=&quot;$ADTER_MOVE$E&quot;&#10;        afteredit=&quot;$AFTER_EDIT$&quot;&#10;        afterinsert=&quot;$AFTER_INSERT$&quot;/&gt;&#10;&lt;/jcr:root&gt;" description="_cq_editConfig.xml file template" toReformat="false" toShortenFQNames="true">
+    <variable name="AFTER_DELETE" expression="" defaultValue="&quot;REFRESH_PARENT&quot;" alwaysStopAt="true" />
+    <variable name="ADTER_MOVE" expression="" defaultValue="&quot;REFRESH_PAGE&quot;" alwaysStopAt="true" />
+    <variable name="AFTER_EDIT" expression="" defaultValue="&quot;REFRESH_SELF&quot;" alwaysStopAt="true" />
+    <variable name="AFTER_INSERT" expression="" defaultValue="&quot;REFRESH_PARENT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="aem_template" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;jcr:root xmlns:cq=&quot;http://www.day.com/jcr/cq/1.0&quot; xmlns:jcr=&quot;http://www.jcp.org/jcr/1.0&quot; xmlns:sling=&quot;http://sling.apache.org/jcr/sling/1.0&quot;&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;$RESOURCE_TYPE$&quot; /&gt;" description="_cq_template.xml file template" toReformat="false" toShortenFQNames="true">
+    <variable name="RESOURCE_TYPE" expression="" defaultValue="&quot;RESOURCE_TYPE&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
