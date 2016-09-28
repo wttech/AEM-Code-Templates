@@ -4,7 +4,9 @@
 
 Boost AEM components development
 
-![Code Templates](https://github.com/Cognifide/AEM-Code-Templates/blob/master/demo.gif)
+<p align="center">
+  <img src="misc/demo.gif" alt="Code Templates"/>
+</p>
 
 
 ### What is it and how to use it
