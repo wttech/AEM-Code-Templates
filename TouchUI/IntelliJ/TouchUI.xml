@@ -1,4 +1,4 @@
-<templateSet group="widgets">
+<templateSet group="Touch UI">
   <template name="aem_textfield" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/textfield&quot;&#10;    fieldDescription=&quot;$FIELD_DESCRIPTION$&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    name=&quot;./$NODE_NAME$&quot; /&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="NODE_NAME" expression="" defaultValue="&quot;nodeName&quot;" alwaysStopAt="true" />
     <variable name="FIELD_DESCRIPTION" expression="" defaultValue="&quot;fieldDescription&quot;" alwaysStopAt="true" />
@@ -161,29 +161,6 @@
   <template name="aem_fieldset_with_background" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    jcr:title=&quot;$FIELD_LABEL$&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/fieldset&quot;&gt;&#10;    &lt;layout&#10;        jcr:primaryType=&quot;nt:unstructured&quot;&#10;        sling:resourceType=&quot;granite/ui/components/foundation/layouts/fixedcolumns&quot;/&gt;&#10;    &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;        &lt;column&#10;            jcr:primaryType=&quot;nt:unstructured&quot;&#10;            sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;            &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;                &lt;well&#10;                    jcr:primaryType=&quot;nt:unstructured&quot;&#10;                    sling:resourceType=&quot;granite/ui/components/foundation/container&quot;&gt;&#10;                &lt;layout&#10;                    jcr:primaryType=&quot;nt:unstructured&quot;&#10;                    sling:resourceType=&quot;granite/ui/components/foundation/layouts/well&quot;/&gt;&#10;                    &lt;items jcr:primaryType=&quot;nt:unstructured&quot;&gt;&#10;                        $END$&#10;                    &lt;/items&gt;&#10;                &lt;/well&gt;&#10;            &lt;/items&gt;&#10;        &lt;/column&gt;&#10;    &lt;/items&gt;&#10;&lt;/$NODE_NAME$&gt;&#10;" toReformat="false" toShortenFQNames="true">
     <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
     <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="XML_TEXT" value="true" />
-    </context>
-  </template>
-  <template name="aem_component_definition" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;jcr:root xmlns:cq=&quot;http://www.day.com/jcr/cq/1.0&quot; xmlns:jcr=&quot;http://www.jcp.org/jcr/1.0&quot;&#10;    cq:isContainer=&quot;{Boolean}$IS_CONTAINER$&quot;&#10;    jcr:primaryType=&quot;cq:Component&quot;&#10;    jcr:title=&quot;$COMPONENT_TITLE$&quot;&#10;    componentGroup=&quot;$COMPONENT_GROUP$&quot; /&gt;" description=".content.xml node" toReformat="false" toShortenFQNames="true">
-    <variable name="IS_CONTAINER" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
-    <variable name="COMPONENT_TITLE" expression="" defaultValue="&quot;COMPONENT_TITLE&quot;" alwaysStopAt="true" />
-    <variable name="COMPONENT_GROUP" expression="" defaultValue="&quot;COMPONENT_GROUP&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="XML_TEXT" value="true" />
-    </context>
-  </template>
-  <template name="aem_editconfig" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;jcr:root xmlns:cq=&quot;http://www.day.com/jcr/cq/1.0&quot; xmlns:jcr=&quot;http://www.jcp.org/jcr/1.0&quot;&#10;    cq:dialogMode=&quot;floating&quot;&#10;    jcr:primaryType=&quot;cq:EditConfig&quot;&gt;&#10;    &lt;cq:listeners&#10;        jcr:primaryType=&quot;cq:EditListenersConfig&quot;&#10;        afterdelete=&quot;$AFTER_DELETE$&quot;&#10;        aftermove=&quot;$ADTER_MOVE$E&quot;&#10;        afteredit=&quot;$AFTER_EDIT$&quot;&#10;        afterinsert=&quot;$AFTER_INSERT$&quot;/&gt;&#10;&lt;/jcr:root&gt;" description="_cq_editConfig.xml file template" toReformat="false" toShortenFQNames="true">
-    <variable name="AFTER_DELETE" expression="" defaultValue="&quot;REFRESH_PARENT&quot;" alwaysStopAt="true" />
-    <variable name="ADTER_MOVE" expression="" defaultValue="&quot;REFRESH_PAGE&quot;" alwaysStopAt="true" />
-    <variable name="AFTER_EDIT" expression="" defaultValue="&quot;REFRESH_SELF&quot;" alwaysStopAt="true" />
-    <variable name="AFTER_INSERT" expression="" defaultValue="&quot;REFRESH_PARENT&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="XML_TEXT" value="true" />
-    </context>
-  </template>
-  <template name="aem_template" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;jcr:root xmlns:cq=&quot;http://www.day.com/jcr/cq/1.0&quot; xmlns:jcr=&quot;http://www.jcp.org/jcr/1.0&quot; xmlns:sling=&quot;http://sling.apache.org/jcr/sling/1.0&quot;&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;$RESOURCE_TYPE$&quot; /&gt;" description="_cq_template.xml file template" toReformat="false" toShortenFQNames="true">
-    <variable name="RESOURCE_TYPE" expression="" defaultValue="&quot;RESOURCE_TYPE&quot;" alwaysStopAt="true" />
     <context>
       <option name="XML_TEXT" value="true" />
     </context>
