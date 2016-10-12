@@ -16,11 +16,11 @@ Boost AEM components development
 
 ### Template types
 
- 1. [Touch UI](TouchUI/documentation.md) templates
+1. [Touch UI](TouchUI/documentation.md) templates
 
  Provide templates for Touch UI dialogs and widgets which could be used inside the dialog.
 
- * [AEM Files](ComponentFiles/documentation.md) templates
+2.  [AEM Files](ComponentFiles/documentation.md) templates
 
  Provide basic definition of the AEM component files like: `.content.xml`, `_cq_template.xml`, `_cq_editConfig.xml`.
 
@@ -38,18 +38,18 @@ Boost AEM components development
 
 2. Download the **.xml* containing templates definition file from the repository
 
-* Restart your IDE
+3. Restart your IDE
 
 
 #### Eclipse
 
 1. Download the **.xml* containing templates definition file from the repository
 
-* Open your IDE
+2. Open your IDE
 
-* Go to `Window > Preferences > XML > XML Files > Editor > Templates`
+3. Go to `Window > Preferences > XML > XML Files > Editor > Templates`
 
-* Click *Import* button and select the downloaded file
+4. Click *Import* button and select the downloaded file
 
 ### Change log
 

@@ -12,7 +12,7 @@
 
 1. [IntelliJ](IntelliJ/componentFiles.xml)
 
-* Eclipse version does not exist
+2. Eclipse version does not exist
 
 
 ### Commands
@@ -21,10 +21,10 @@
 
   Provides template for `.content.xml` file
 
-* `component_editconfig`
+2. `component_editconfig`
 
   Provides template for `_cq_editConfig.xml` file
 
-* `component_template`
+3. `component_template`
 
   Provides template for `_cq_template.xml` file

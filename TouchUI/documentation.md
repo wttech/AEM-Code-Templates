@@ -12,7 +12,7 @@
 
 1. [IntelliJ](IntelliJ/TouchUI.xml)
 
-* [Eclipse](Eclipse/TouchUI.xml)
+2. [Eclipse](Eclipse/TouchUI.xml)
 
 
 ### Commands:
@@ -20,84 +20,83 @@
 1. `aem_cq_dialog_without_tab`
 
   Provides template for Touch UI dialog without any tab. If you would like to have tabs in your dialog the please use the next template
-
-* `aem_cq_dialog_with_tab`
+2. `aem_cq_dialog_with_tab`
 
   Provides template for Touch UI dialog with one tab
 
-* `aem_cq_dialog_tab`
+3. `aem_cq_dialog_tab`
 
   Provides template for single Touch UI dialog's tab. Extends the previous template.
 
-* `aem_checkbox`
+4. `aem_checkbox`
 
   Provides template for checkbox control
 
-* `aem_fieldset`
+5. `aem_fieldset`
 
   Provides template for fieldset panel
 
-* `aem_fieldset_with_background`
+6. `aem_fieldset_with_background`
 
     Provides template for fieldset panel with some gray background
 
-* `aem_image`
+7. `aem_image`
 
   Provides template for image control
 
-* `aem_include`
+8. `aem_include`
 
   Provides template for including a external file containing Touch UI controls definition
 
-* `aem_multifield`
+9. `aem_multifield`
 
   Provides template for multifield control
 
-* `aem_numberfield`
+10. `aem_numberfield`
 
   Provides template for numberfield control (integer)
 
-* `aem_numberfield_decimal`
+11. `aem_numberfield_decimal`
 
   Provides template for numberfield control (decimal)
 
-* `aem_pathbrowser`
+12. `aem_pathbrowser`
 
   Provides template for pathbrowser control
 
-* `aem_radiogroup`
+13. `aem_radiogroup`
 
   Provides template for radiogroup control
 
-* `radiogroup_option`
+14. `radiogroup_option`
 
   Provides template for radio control
 
-* `aem_richtext`
+15. `aem_richtext`
 
   Provides template for richtext control
 
-* `aem_select`
+16. `aem_select`
 
   Provides template for select control (static options)
 
-* `aem_select_dynamic`
+17. `aem_select_dynamic`
 
   Provides template for select control (options taken from the datasource)
 
-* `aem_select_option`
+18. `aem_select_option`
 
   Provides template for option for static select control
 
-* `aem_text`
+19. `aem_text`
 
   Provides template for text control
 
-* `aem_textarea`
+20. `aem_textarea`
 
   Provides template for textarea control
 
-* `aem_textfield`
+21. `aem_textfield`
 
   Provides template for textfield control
 
