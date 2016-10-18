@@ -20,7 +20,7 @@ Boost AEM components development
 
  Provide templates for Touch UI dialogs and widgets which could be used inside the dialog.
 
-2.  [AEM Files](https://github.com/Cognifide/AEM-Code-Templates/tree/master/ComponentFiles) templates
+2.  [Component Files](https://github.com/Cognifide/AEM-Code-Templates/tree/master/ComponentFiles) templates
 
  Provide basic definition of the AEM component files like: `.content.xml`, `_cq_template.xml`, `_cq_editConfig.xml`.
 
