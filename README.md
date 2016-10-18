@@ -5,6 +5,7 @@
 Boost AEM components development
 
 <p align="center">
+  <p>Touch UI templates demo<p>
   <img src="misc/demo.gif" alt="Code Templates"/>
 </p>
 
@@ -13,18 +14,17 @@ Boost AEM components development
 
 *Code templates* are list of reusable and parameterized code snippets. The feature is well-known for all developers. You use it every time when you create *loops*/*conditions* in Java classes.
 
-The custom **code templates** are available in *xml* files only. Just type **aem** in a *xml* file and select the template which you want.
+### Template types
 
+1. [Touch UI](https://github.com/Cognifide/AEM-Code-Templates/tree/master/TouchUI) templates
 
-### Existing scripts support:
- * the most popular Touch UI widgets (e.g. *textfield*, *selection*, *image*, *pathbrowser*). They cover at least 80% cases.
+ Provide templates for Touch UI dialogs and widgets which could be used inside the dialog.
 
- * Touch UI dialog structure and dialog's tabs
+2.  [AEM Files](https://github.com/Cognifide/AEM-Code-Templates/tree/master/ComponentFiles) templates
 
- * AEM component definition (structure of the *.content.xml*, *\_cq\_editConfig.xml* and *_cq_template.xml* files)
+ Provide basic definition of the AEM component files like: `.content.xml`, `_cq_template.xml`, `_cq_editConfig.xml`.
 
-
-### How to configure it
+### How to install
 
 #### IntelliJ
 
@@ -36,30 +36,24 @@ The custom **code templates** are available in *xml* files only. Just type **aem
 
   * OS: `~/Library/Preferences/<product name><version number>/templates`
 
-2. Download the *widgets.xml* file from [the repository](https://github.com/Cognifide/AEM-Code-Templates/blob/master/IntelliJ/widgets.xml)
+2. Download the **.xml* containing templates definition file from the repository
 
-* Restart your IDE
+3. Restart your IDE
 
 
 #### Eclipse
 
-1. Download the *templates.xml* file from [the repository](https://github.com/Cognifide/AEM-Code-Templates/blob/master/Eclipse/templates.xml)
+1. Download the **.xml* containing templates definition file from the repository
 
-* Open your IDE
+2. Open your IDE
 
-* Go to `Window > Preferences > XML > XML Files > Editor > Templates`
+3. Go to `Window > Preferences > XML > XML Files > Editor > Templates`
 
-* Click *Import* button and select the downloaded file
+4. Click *Import* button and select the downloaded file
+
+### Change log
+
+ 1. Version: 1.0.0 Date: 29.09.2016
 
 
-### Known issues
-
-1. Eclipse IDE doesn't preserve template indents
-
-  **Workaround**:
-
-  * Open the following settings `Window >Preferences > XML > XML Files > Editor`
-
-  * Check the `Split multiple attributes each on a new line` option
-
-  * Set four spaces as the `Indentation size`
+  `Touch UI` and `Component Files` provided
