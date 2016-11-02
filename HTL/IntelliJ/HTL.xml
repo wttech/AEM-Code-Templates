@@ -1,5 +1,5 @@
 <templateSet group="HTL">
-  <template name="sly-use" value="&lt;sly data-sly-use.$VAR0$=&quot;$className$&quot; /&gt;" description="data-sly-use" toReformat="false" toShortenFQNames="true">
+  <template name="sly-use/&gt;" value="&lt;sly data-sly-use.$VAR0$=&quot;$className$&quot; /&gt;" description="data-sly-use enclosed with markup" toReformat="false" toShortenFQNames="true">
     <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="className" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -25,7 +25,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="sly-template" value="&lt;template data-sly-template.$VAR0$=&quot;${ @ $VAR1$}&quot;&gt;&#10;    $END$&#10;&lt;/template&gt;" description="data-sly-template" toReformat="false" toShortenFQNames="true">
+  <template name="sly-template/&gt;" value="&lt;template data-sly-template.$VAR0$=&quot;${ @ $VAR1$}&quot;&gt;&#10;    $END$&#10;&lt;/template&gt;" description="data-sly-template enclosed with markup" toReformat="false" toShortenFQNames="true">
     <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -52,7 +52,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="sly-list" value=" &lt;sly data-sly-list.$VAR0$=&quot;${$VAR1$}&quot;&gt;&#10; $END$&#10; &lt;/sly&gt;" description="data-sly-list" toReformat="false" toShortenFQNames="true">
+  <template name="sly-list/&gt;" value=" &lt;sly data-sly-list.$VAR0$=&quot;${$VAR1$}&quot;&gt;&#10; $END$&#10; &lt;/sly&gt;" description="data-sly-list enclosed with markup" toReformat="false" toShortenFQNames="true">
     <variable name="VAR0" expression="" defaultValue="item" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -73,6 +73,51 @@
   </template>
   <template name="sly-repeat" value="data-sly-repeat=&quot;${$VAR0$}&quot;" description="data-sly-repeat" toReformat="false" toShortenFQNames="true">
     <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sly-attribute/&gt;" value="&lt;div data-sly-attribute=&quot;${$VAR1$}&quot; &gt;$END$&lt;/div&gt;" description="data-sly-attribute enclosed with markup" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sly-call/&gt;" value="&lt;div data-sly-call=&quot;${$VAR0$ @ $VAR1$}&quot;&gt;$END$&lt;/div&gt;" description="data-sly-call  enclosed with markup" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sly-include/&gt;" value="&lt;div data-sly-include=&quot;$VAR0$&quot;&gt;$END$&lt;/div&gt;" description="data-sly-include enclosed with markup" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sly-repeat/&gt;" value="&lt;div data-sly-repeat=&quot;${$VAR0$}&quot; &gt;$END$&lt;/div&gt;" description="data-sly-repeat enclosed with markup" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sly-resource/&gt;" value="&lt;div data-sly-resource=&quot;${'$VAR0$' @ resourceType='$VAR1$'}&quot;&gt;$END$&lt;/div&gt;" description="data-sly-resource enclosed with markup" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sly-test/&gt;" value="&lt;div data-sly-test=&quot;${$VAR0$}&quot;&gt;$END%&lt;/div&gt;" description="data-sly-test enclosed with markup" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="sly-text/&gt;" value="&lt;div data-sly-text=&quot;${$VAR0$ @ context=$VAR1$}&quot;&gt;$END$&lt;/div&gt;" description="data-sly-text enclosed with markup" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="unsafe" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
