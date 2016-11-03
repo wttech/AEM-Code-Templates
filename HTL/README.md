@@ -8,6 +8,7 @@ Simplifies writing [HTL](https://docs.adobe.com/docs/en/htl/docs/getting-started
 ### Usage
 Write "sly-command" or only $ in your html file and press Tab for auto-completion.
 Depending on the command, the markup is generated automatically.
+Use "sly-command/>" for "<div></div>"-enclosing htl markup and "sly-command" for inline markup.
 
 ### Commands:
 #### $
