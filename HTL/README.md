@@ -3,12 +3,13 @@ HTL Live Templates
 
 # HTL Live Templates for IntelliJ IDEA
 
-Simplifies writing [HTL](https://docs.adobe.com/docs/en/htl/docs/getting-started.html) Markup in IntelliJ via Live Templates
+Simplifies writing [HTL](https://docs.adobe.com/docs/en/htl/docs/getting-started.html) Markup in IntelliJ via [Live Templates](https://www.jetbrains.com/help/idea/live-templates.html)
 
 ### Usage
-Write "sly-command" or only $ in your html file and press Tab for auto-completion.
+Type `sly-command` or only `$` in your html file and press <kbd>Tab</kbd> for auto-completion.
 Depending on the command, the markup is generated automatically.
-Use "sly-command/>" for "<div></div>"-enclosing htl markup and "sly-command" for inline markup.
+
+Use `sly-command/>` to render a `<div>` element enclosing the generated HTL attribute or `sly-command` for inline markup.
 
 ### Commands:
 #### $
