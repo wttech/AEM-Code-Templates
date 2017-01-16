@@ -10,7 +10,7 @@ Boost AEM components development
 
 <p align="center">
   <p>Touch UI templates demo<p>
-  <img src="misc/demo.gif" alt="Code Templates"/>
+  <img src="misc/demo/demo.gif" alt="Code Templates"/>
 </p>
 
 
@@ -28,21 +28,39 @@ Boost AEM components development
 
  Provide basic definition of the AEM component files like: `.content.xml`, `_cq_template.xml`, `_cq_editConfig.xml`.
 
+3.  [HTL](https://github.com/Cognifide/AEM-Code-Templates/tree/master/HTL) templates
+
+ Provide templates for HTML Template Language (HTL)
+
 ### How to install
 
 #### IntelliJ
 
-1. Go to the following directory where **code templates** are stored
+1. Automatic Import
 
-  * Windows: `<your home directory>\.<product name><version number>\config\templates`
+  1. Download [the liveTemplates.jar file](https://github.com/Cognifide/AEM-Code-Templates/blob/master/misc/intellij/liveTemplates-2.0.0.jar)
 
-  * Linux: `~/.<product name><version number>/config/templates`
+  2. Open your IDE
 
-  * OS: `~/Library/Preferences/<product name><version number>/templates`
+  3. Go to `File > Import Settings`
 
-2. Download the **.xml* containing templates definition file from the repository
+  4. Choose the file downloaded in the fist step and click `OK`
 
-3. Restart your IDE
+2. Manual Import
+
+  1. Go to the following directory where **code templates** are stored on you computer
+
+    * Windows: `<your home directory>\.<product name><version number>\config\templates`
+
+    * Linux: `~/.<product name><version number>/config/templates`
+
+    * OS: `~/Library/Preferences/<product name><version number>/templates`
+
+  2. Download the **.xml* containing templates definition file from the repository
+
+  3. Put the downloaded file to the directory from the first point
+
+  4. Restart your IDE if it is running
 
 
 #### Eclipse
@@ -57,7 +75,10 @@ Boost AEM components development
 
 ### Change log
 
- 1. Version: 1.0.0 Date: 29.09.2016
+1. Version 2.0.0 Date 16.01.2017
 
+  `HTL` templates provided
 
-  `Touch UI` and `Component Files` provided
+2. Version: 1.0.0 Date: 29.09.2016
+
+ `Touch UI` and `Component Files` templates provided
