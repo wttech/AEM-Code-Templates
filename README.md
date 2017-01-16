@@ -10,7 +10,7 @@ Boost AEM components development
 
 <p align="center">
   <p>Touch UI templates demo<p>
-  <center><img src="misc/demo/demo.gif" alt="Code Templates"/></center>
+  <img src="misc/demo/demo.gif" alt="Code Templates"/>
 </p>
 
 
