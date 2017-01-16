@@ -61,7 +61,3 @@ Use `sly-command/>` to render a `<div>` element enclosing the generated HTL attr
 <p align="center">
   <img src="resources/intellij.gif" alt="HTL Templates"/>
 </p>
-
-### Installation
-
-Install to IntelliJ IDEA, see https://www.jetbrains.com/help/idea/2016.2/sharing-live-templates.html
