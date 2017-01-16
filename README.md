@@ -38,7 +38,7 @@ Boost AEM components development
 
 1. Automatic Import
 
-  1. Download [the liveTemplates.jar file](https://github.com/Cognifide/AEM-Code-Templates/blob/master/misc/intellij/liveTemplates-2.0.0.jar)
+  1. Download [the liveTemplates.jar file](https://github.com/Cognifide/AEM-Code-Templates/blob/master/misc/releases/intellij/liveTemplates-2.0.0.jar)
 
   2. Open your IDE
 
