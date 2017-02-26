@@ -144,6 +144,7 @@
     mimeTypes="[image]"&#13;
     multiple="{Boolean}${false}"&#13;
     name="./${NODE_NAME}/file"&#13;
+    uploadUrl="$${suffix.path}"&#13;
     title="${FIELD_LABEL}"&#13;
     useHTML5="{Boolean}${true}" /&gt;</template><template autoinsert="true" context="xml_all" deleted="false" description="" enabled="true" name="aem_include">&lt;${NODE_NAME}&#13;
     jcr:primaryType="nt:unstructured"&#13;
