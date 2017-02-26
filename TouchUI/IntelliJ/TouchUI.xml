@@ -15,7 +15,7 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
-  <template name="aem_image" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/fileupload&quot;&#10;    autoStart=&quot;{Boolean}false&quot;&#10;    class=&quot;cq-droptarget&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    fileNameParameter=&quot;./$NODE_NAME$/fileName&quot;&#10;    mimeTypes=&quot;[image]&quot;&#10;    multiple=&quot;{Boolean}$FIELD_MULTIPLE$&quot;&#10;    name=&quot;./$NODE_NAME$/file&quot;&#10;    title=&quot;$FIELD_LABEL$&quot;&#10;    useHTML5=&quot;{Boolean}$USE_HTML5$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="aem_image" value="&lt;$NODE_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/fileupload&quot;&#10;    autoStart=&quot;{Boolean}false&quot;&#10;    class=&quot;cq-droptarget&quot;&#10;    fieldLabel=&quot;$FIELD_LABEL$&quot;&#10;    fileNameParameter=&quot;./$NODE_NAME$/fileName&quot;&#10;    mimeTypes=&quot;[image]&quot;&#10;    multiple=&quot;{Boolean}$FIELD_MULTIPLE$&quot;&#10;    name=&quot;./$NODE_NAME$/file&quot;&#10;    uploadUrl=&quot;${suffix.path}&quot;&#10;    title=&quot;$FIELD_LABEL$&quot;&#10;    useHTML5=&quot;{Boolean}$USE_HTML5$&quot; /&gt;" toReformat="false" toShortenFQNames="true">
     <variable name="NODE_NAME" expression="" defaultValue="&quot;NODE_NAME&quot;" alwaysStopAt="true" />
     <variable name="FIELD_LABEL" expression="capitalize(NODE_NAME)" defaultValue="" alwaysStopAt="true" />
     <variable name="FIELD_MULTIPLE" expression="" defaultValue="&quot;false&quot;" alwaysStopAt="true" />
