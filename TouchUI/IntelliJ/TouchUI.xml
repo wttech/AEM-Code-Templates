@@ -165,4 +165,12 @@
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
+  <template name="aem_hidden" value="&lt;$FIELD_NAME$&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;granite/ui/components/foundation/form/hidden&quot;&#10;    name=&quot;./$NODE_NAME$&quot;&#10;    value=&quot;$VALUE$&quot; /&gt;" description="Touch UI hidden field" toReformat="false" toShortenFQNames="true">
+    <variable name="FIELD_NAME" expression="" defaultValue="&quot;fieldName&quot;" alwaysStopAt="true" />
+    <variable name="NODE_NAME" expression="" defaultValue="FIELD_NAME" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
 </templateSet>
