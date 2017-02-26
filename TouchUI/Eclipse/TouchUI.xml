@@ -134,7 +134,11 @@
         &lt;/column&gt;&#13;
     &lt;/items&gt;&#13;
 &lt;/${NODE_NAME}&gt;&#13;
-</template><template autoinsert="true" context="xml_all" deleted="false" description="" enabled="true" name="aem_image">&lt;${NODE_NAME}&#13;
+</template><template autoinsert="true" context="xml_all" deleted="false" description="AEM Touch UI dialog hidden field" enabled="true" name="aem_hidden">&lt;${FIELD_NAME}&#13;
+    jcr:primaryType="nt:unstructured"&#13;
+    sling:resourceType="granite/ui/components/foundation/form/hidden"&#13;
+    name="./${NODE_NAME}"&#13;
+    value="${VALUE}" /&gt;</template><template autoinsert="true" context="xml_all" deleted="false" description="" enabled="true" name="aem_image">&lt;${NODE_NAME}&#13;
     jcr:primaryType="nt:unstructured"&#13;
     sling:resourceType="granite/ui/components/foundation/form/fileupload"&#13;
     autoStart="{Boolean}false"&#13;
