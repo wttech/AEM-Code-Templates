@@ -1,4 +1,4 @@
-![Cognifide logo](http://cognifide.github.io/images/cognifide-logo.png)
+![Cognifide logo](https://assets.cognifide.com/github/cognifide-logo.png)
 
 [![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/cognifide/aet.svg?label=License)](http://www.apache.org/licenses/)
 
