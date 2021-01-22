@@ -1,7 +1,3 @@
-![Cognifide logo](https://assets.cognifide.com/github/cognifide-logo.png)
-
-[![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/cognifide/aet.svg?label=License)](http://www.apache.org/licenses/)
-
 # Code Templates
 
 ### Goal
@@ -20,15 +16,15 @@ Boost AEM components development
 
 ### Template types
 
-1. [Touch UI](https://github.com/Cognifide/AEM-Code-Templates/tree/master/TouchUI) templates
+1. [Touch UI](https://github.com/wttech/AEM-Code-Templates/tree/master/TouchUI) templates
 
  Provide templates for Touch UI dialogs and widgets which could be used inside the dialog.
 
-2.  [Component Files](https://github.com/Cognifide/AEM-Code-Templates/tree/master/ComponentFiles) templates
+2.  [Component Files](https://github.com/wttech/AEM-Code-Templates/tree/master/ComponentFiles) templates
 
  Provide basic definition of the AEM component files like: `.content.xml`, `_cq_template.xml`, `_cq_editConfig.xml`.
 
-3.  [HTL](https://github.com/Cognifide/AEM-Code-Templates/tree/master/HTL) templates
+3.  [HTL](https://github.com/wttech/AEM-Code-Templates/tree/master/HTL) templates
 
  Provide templates for HTML Template Language (HTL)
 
@@ -38,7 +34,7 @@ Boost AEM components development
 
 1. Automatic Import
 
-  1. Download [the liveTemplates.jar file](https://github.com/Cognifide/AEM-Code-Templates/blob/master/misc/releases/intellij/liveTemplates-2.0.0.jar)
+  1. Download [the liveTemplates.jar file](https://github.com/wttech/AEM-Code-Templates/blob/master/misc/releases/intellij/liveTemplates-2.0.0.jar)
 
   2. Open your IDE
 
